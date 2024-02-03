@@ -1,4 +1,4 @@
-# 思源笔记《高等数学》样板项目
+# 思源《高等数学》样板项目
 下载页： https://github.com/tritium333/advancedmath_siyuan/releases 
 
 现已更新至第一章第三节。
