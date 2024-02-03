@@ -1,7 +1,7 @@
 # 思源《高等数学》样板项目
 下载页： https://github.com/tritium333/advancedmath_siyuan/releases 
 
-现已更新至第一章第二节。
+现已更新至第一章第三节。
 
 本项目具有如下特色：
 1. 知识点之间的引用。比如书中凡是出现“连续”的地方，我都链接到“连续”这一定义所在块，方便温故知新。
@@ -35,3 +35,26 @@
     left:11px;  /* 如果希望此处不显示竖线， 自行替换为 display:none; */
 }
 ```
+思源默认的引用颜色不是很好看，建议通过以下css代码片段修改：
+```css
+/* 默认浅色主题引用颜色 */
+:root:has(#themeDefaultStyle[href *="daylight"]) .protyle-wysiwyg [data-node-id] span[data-type~=block-ref]:not(.av__celltext), .protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref] {
+    color: #7958b8; 
+}
+
+/* 默认暗黑主题引用颜色 */
+:root:has(#themeDefaultStyle[href *="midnight"]) .protyle-wysiwyg [data-node-id] span[data-type~=block-ref]:not(.av__celltext), .protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref] {
+    color: #ceb4ff; 
+}
+
+/* 去掉反链面板中引用的背景色 */
+.protyle-wysiwyg [data-node-id] .def--mark {
+    background-color: transparent;
+}
+```
+
+鸣谢：
+
+- [思源笔记](https://b3log.org/siyuan/)
+- [SimpleTex - 好用的公式识别神器！](https://simpletex.cn/)
+- [quicker](https://getquicker.net/Sharedaction?code=2605ff05-b84f-4da6-107c-08db6a78bc4a)
