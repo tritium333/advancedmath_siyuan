@@ -1,7 +1,7 @@
 # 思源《高等数学》样板项目
 下载页： https://github.com/tritium333/advancedmath_siyuan/releases 
 
-现已更新至第一章第三节。
+现已更新至第一章第五节。
 
 本项目具有如下特色：
 1. 知识点之间的引用。比如书中凡是出现“连续”的地方，我都链接到“连续”这一定义所在块，方便温故知新。
@@ -50,6 +50,13 @@
 /* 去掉反链面板中引用的背景色 */
 .protyle-wysiwyg [data-node-id] .def--mark {
     background-color: transparent;
+}
+```
+合并卡片中的多个连续挖空：
+```css
+/* 合并卡片中的多个连续挖空 */
+.card__block--hidemark span[data-type~=mark] + span[data-type~=mark]::before {
+    display: none;
 }
 ```
 
