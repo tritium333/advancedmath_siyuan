@@ -55,9 +55,12 @@
 合并卡片中的多个连续挖空：
 ```css
 /* 合并卡片中的多个连续挖空 */
-.card__block--hidemark span[data-type~=mark] + span[data-type~=mark]::before {
+.card__block--hidemark span[data-type~=mark] + span[data-type~=mark] {
     display: none;
 }
+
+/* 使用此代码片段后，同一块中，两个非连续挖空之间的普通文本中，需任意找一个标点符号， */
+/* 把它修改为加粗或斜体或彩色，如果没有标点符号，也可以添加一空白公式$\,$ */
 ```
 
 鸣谢：
